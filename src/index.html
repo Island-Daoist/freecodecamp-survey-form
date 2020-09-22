@@ -1,0 +1,100 @@
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class='form-data'>
+    <header id="header">
+      <h1 id="title">Gaming Preferences Survey</h1>
+      <p id="description">Let us talk gaming. Let us know what and how you play!</p>
+    </header>
+
+    <main>
+      <form id="survey-form" action="#" method="post">
+        <div class='form-entry'>
+          <label for="name" id="name-label">Name: </label>
+          <input id="name" class='form-field' type="text" placeholder="Please enter your name..." name="name" required>
+        </div>
+        <div class='form-entry'>
+          <label for="email" id="email-label">Email: </label>
+          <input id="email" class='form-field' type="email" placeholder="Please provide your email..." name="email" required>
+        </div>
+        <div class='form-entry'>
+          <label for="number" id="number-label">Age: </label>
+          <input id="number" class='form-field' type="number" name="number" placeholder="Please provide your age..." min="1" max="99">
+        </div>
+        <div class='form-entry'>
+          <p>How would you describe your gaming habit?</p>
+          <select id="dropdown" class='form-field' name="game-habit" required>
+            <option disabled selected value>Let us know...</option>
+            <option value="no-gamer">Don't really game.</option>
+            <option value="casual">I'm a casual gamer.</option>
+            <option value="serious">I really enjoy playing games and spend a lot of time on them.</option>
+            <option value="hardcore">I live to game! Not a day goes by without me firing one up.</option>
+            <option value="gamer-life">I am gamer. My life and existence belongs to game.</option>
+          </select>
+        </div>
+        <div class='form-entry'>
+          <p>How many hours a week do you play games?</p>
+          <label for="1-to-2">
+            <input id="1-to-2" class='input-radio-select' type="radio" name="radio-buttons" value="1-to-2">1 to 2 hours
+          </label>
+          <label for="2-to-5">
+            <input id="2-to-5" class='input-radio-select' type="radio" name="radio-buttons" value="2-to-5">2 to 5 hours
+          </label>
+          <label for="5-to-7">
+            <input id="5-to-7" class='input-radio-select' type="radio" name="radio-buttons" value="5-to-7">5 to 7 hours
+          </label>
+          <label for="7-to-10">
+            <input id="7-to-10" class='input-radio-select' type="radio" name="radio-buttons" value="7-to-10">7 to 10 hours
+          </label>
+          <label for="10+">
+            <input id="10+" class='input-radio-select' type="radio" name="radio-buttons" value="10+">10+ hours
+          </label>
+        </div>
+        <div class='form-entry checkboxes'>
+          <p>What is your favourite genre(s)? Select all that apply.</p>
+          <label for="RTS">
+            <input id="RTS" class="input-radio-select" type="checkbox" name="game-genre" value="RTS">Real Time Strategy
+          </label>
+          <label for="FPS">
+            <input id="FPS" class="input-radio-select" type="checkbox" name="game-genre" value="FPS">First Person Shooters
+          </label>
+          <label for="puzzle">
+            <input id="puzzle" class="input-radio-select" type="checkbox" name="game-genre" value="puzzle">Puzzles
+          </label>
+          <label for="RPG">
+            <input id="RPG" class="input-radio-select" type="checkbox" name="game-genre" value="RPG">Role Playing Games
+          </label>
+          <label for="card">
+            <input id="card" class="input-radio-select" type="checkbox" name="game-genre" value="card">Card Games
+          </label>
+          <label for="VR">
+            <input id="VR" class="input-radio-select" type="checkbox" name="game-genre" value="VR">VR Games
+          </label>
+        </div>
+        <div class='form-entry'>
+          <p>How often do you try games that differ from your norm?</p>
+          <select id="dropdown" class='form-field' name="game-differ" required>
+            <option disabled selected value>Let us know...</option>
+            <option value="never">I tend to stick with what I know and like.</option>
+            <option value="sometimes">I'm open to trying new things, if the game looks good!</option>
+            <option value="all-the-time">Games are a medium of exploration that I try to experience as much of as I can!</option>
+          </select>
+        </div>
+        <div class='form-entry'>
+          <label for="final-thoughts">Do you have anything else you'd like to let us know about your gaming habit?</label>
+          <textarea id="final-thoughts" class="final-thoughts" name="final-thoughts" placeholder="Your thoughts..."></textarea>
+        </div>
+        <div class='form-entry'>
+          <button id="submit" class="submit-button" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+
+    </footer>
+  </div>
+</body>

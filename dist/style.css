@@ -1,0 +1,149 @@
+* { 
+  box-sizing: border-box; 
+}
+
+body {
+  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/diagonal_striped_brick.png");
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1rem;
+}
+
+.form-data {
+  margin: 2.35rem auto 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .form-data {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .form-data {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1140px) {
+  .form-data {
+    max-width: 1080px;
+  }
+}
+
+#header {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+#title {
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+  font-size: 2.75em;
+}
+
+#description {
+  margin-top: 0px;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgba(0, 125, 125, 0.4);
+}
+
+#survey-form {
+  background: rgba(10, 38, 247, 0.75);
+  border-radius: 0.35rem;
+  color: white;
+  padding: 2.25rem;
+}
+
+.form-entry {
+  margin: 0 auto 1.75rem auto;
+  padding: 0.35rem;
+}
+
+label {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 1.235rem;
+  align-items: center;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  height: 2.35rem;
+  border: 2px solid #fff;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+}
+
+input, button, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.235rem;
+}
+
+.input-radio-select {
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.checkboxes p {
+  grid-area: 1/1/2/3;
+}
+
+.checkboxes #RTS {
+  grid-area: 2/1/2/2;
+}
+
+.checkboxes #FPS {
+  grid-area: 3/1/2/2;
+}
+
+.checkboxes #puzzle {
+  grid-area: 4/1/2/2;
+}
+
+.checkboxes #RPG {
+  grid-area: 2/2/3/3;
+}
+
+.checkboxes #card {
+  grid-area: 2/3/3/3;
+}
+
+.checkboxes #VR {
+  grid-area: 2/4/3/3;
+}
+
+.final-thoughts {
+  min-height: 125px;
+  width: 100%;
+  resize: vertical;
+  padding: 0.55rem;
+}
+
+.submit-button {
+  width: 100%;
+  color: inherit;
+  background: rgba(225, 65, 105, .75);
+  border-radius: 7.5%;
+  padding: 0.55rem;
+}
